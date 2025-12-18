@@ -76,11 +76,11 @@ function Register() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    /*await fetch("http://localhost:5000/api/users/register", {
+    await fetch("https://mern-backend-mkb5.onrender.com/api/users/register", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(form),
-    });*/
+    });
 
     navigate("/login", { state: { registered: true } });
   };
